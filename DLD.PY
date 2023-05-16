@@ -1,3 +1,6 @@
+#Dirty Lens Detector
+
+
 import cv2 # sudo apt install python3-opencv
 import numpy as np
 
@@ -22,8 +25,8 @@ def is_lens_dirty(ref_image, current_image):
 
     return is_dirty
 # Load the reference image and the current image
-ref_image = cv2.imread('reference_image.jpg')
-current_image = cv2.imread('current_image.jpg')
+ref_image = cv2.imread('/home/st-001/Documents/2.jpg')
+current_image = cv2.imread('/home/st-001/Documents/1.jpg')
 
 # Check if the lens is dirty
 dirty_status = is_lens_dirty(ref_image, current_image)
